@@ -8,6 +8,7 @@
  The project covers the next test cases:
 
  1. Find and order white gymnastic footwear for girls (35 EU size).
+ 2. Find and order video card Gigabyte PCI-Ex Radeon RX 580 Aorus 4GB GDDR5 (256bit) (1365/7000) (DVI, HDMI, 3 x Display Port).
 
  ## 1. Configuration details:
  The project uses **TestNG**  testing framework and **Allure** test report framework to create test execution reports.
