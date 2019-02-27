@@ -7,18 +7,20 @@ repositories {
 }
 
 dependencies {
-    compile("org.testng:testng:6.12",
-            'org.seleniumhq.selenium:selenium-java:3.7.1',
-            'io.github.bonigarcia:webdrivermanager:1.7.2',
-            "io.vavr:vavr:0.9.0"
+    compile("org.testng:testng:6.14.3",
+            'org.seleniumhq.selenium:selenium-java:3.14.0',
+            'io.github.bonigarcia:webdrivermanager:3.3.0',
+            "io.vavr:vavr:0.10.0"
     )
 }
-task wrapper(type: Wrapper) {
-    gradleVersion '4.3.1'
+wrapper {
+    gradleVersion = '4.4'
+    distributionUrl = distributionUrl.replace("bin", "all")
 }
 
 test {
     useTestNG() {
+        listeners << 'io.github.lmalakhova.core.WebDriverListener'
         suites 'src/test/resources/smoke-suite.xml'
     }
 }

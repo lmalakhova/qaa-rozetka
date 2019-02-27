@@ -1,6 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Smoke">
-    <test name="Chrome group">
+<suite name="Smoke" parallel="tests" thread-count="2">
+    <test name="Chrome group 1">
+        <classes>
+            <class name="io.github.lmalakhova.RozetkaTests">
+            </class>
+        </classes>
+    </test>
+    <test name="Chrome group 2">
         <classes>
             <class name="io.github.lmalakhova.RozetkaTests">
             </class>
