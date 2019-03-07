@@ -11,7 +11,8 @@ dependencies {
             'org.seleniumhq.selenium:selenium-java:3.14.0',
             'io.github.bonigarcia:webdrivermanager:3.3.0',
             'io.vavr:vavr:0.10.0',
-            'org.aeonbits.owner:owner-java8:1.0.9'
+            'org.aeonbits.owner:owner-java8:1.0.9',
+            'org.projectlombok:lombok:1.18.4'
     )
 }
 wrapper {
