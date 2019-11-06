@@ -13,4 +13,4 @@
  ## 1. Configuration details:
  The project uses **TestNG**  testing framework and **Allure** test report framework to create test execution reports.
  
- **Gradle** configure project build automation.
+ **Gradle** configures project build automation.
