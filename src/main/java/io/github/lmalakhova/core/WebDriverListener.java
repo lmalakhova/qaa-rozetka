@@ -19,7 +19,8 @@ public class WebDriverListener implements IInvokedMethodListener {
     @Override
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
         if (method.isTestMethod()) {
-            WebDriverManager.getInstance(ChromeDriver.class).setup();
+            Class<? extends WebDriver>driverClass=ChromeDriver.class;
+            WebDriverManager.getInstance(driverClass).setup();
             DRIVER_CONTAINER.set(new ChromeDriver());
 
         }

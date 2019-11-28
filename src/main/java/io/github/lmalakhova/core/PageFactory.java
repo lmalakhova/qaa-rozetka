@@ -1,7 +1,6 @@
 package io.github.lmalakhova.core;
 
 import lombok.experimental.UtilityClass;
-import org.joor.Reflect;
 
 import static org.joor.Reflect.on;
 
